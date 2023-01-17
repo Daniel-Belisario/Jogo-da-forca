@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #3F000F;
+  }
+  .container {
+    font-size: 16px;
+    background-color: #ffffff;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+  }
+  #opcao-container {
+    text-align: center;
+  }
+  #opcao-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+  }
+  #opcao-container button {
+    padding: 0.6em 1.2em;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  #opcao-container button:disabled {
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+  }
+  #opcao-container button.active {
+    background-color: #3F000F;
+    border: 3px solid #000000;
+    color: #fff;
+  }
+  .letras-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+  }
+  #letras-container button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .novo-jogo-popup {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+  }
+  
+  #userario-entrada {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 0.6em 0 1.2em 0;
+  }
+  canvas {
+    display: block;
+    margin: auto;
+    border: 10px solid #3F000F;
+    border-radius: 10px;
+  }
+  .ocultar {
+    display: none;
+  }
+  #texto-resultado h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #texto-resultado p {
+    font-size: 1.25em;
+    margin: 1em 0 2em 0;
+  }
+  #texto-resultado span {
+    font-weight: 600;
+  }
+  #novo-jogo-botao {
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background-color: #3F000F;
+    border: 3px solid #000000;
+    color: #fff;
+    border-radius: 0.2em;
+    cursor: pointer;
+  }
+  .ganho-msg {
+    color: #39d78d;
+  }
+  .perdeu-msg {
+    color: #fe5152;
+  }
+
+
+  .copyright {
+    display: block;
+    position: relative;
+    top: 90vh;
+    margin: 25 0 35px 35px;
+    color: #ffffff;
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+  
+}
+
+
+
+
+  @media only screen and (max-device-width: 450px) {
+    #opcao-container button {
+      padding: 0.3em 0.6em;
+     
+  }
+
+ #canvas {
+  width: 90%;
+ }
+
+}
+
+@media only screen and (max-device-width: 300px) {
+  .container {
+    font-size: 12px;
+}
+
+.options {
+  font-size: 10px;
+}
+
+.copyright {
+  font-size: 9px;
+}
+
+}
